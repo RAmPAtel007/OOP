@@ -6,7 +6,7 @@ class A{
 };
 class B {
     public:
-    int physics = 99;
+    int chemistry = 99;
 
 };
 class C : public A, public B{
@@ -17,6 +17,7 @@ class C : public A, public B{
 
 int main(){
     C obj;
-    cout<<"chemistry : "<<obj.chemistry<<"   Physics: "<<obj.physics<<"   Maths :"<<obj.maths<<endl;
+    cout<<"chemistry : "<<obj.B::chemistry<<"   Maths :"<<obj.maths<<endl;
+    //sytanx when both the member are same 
 
 }
